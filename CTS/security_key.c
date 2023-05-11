@@ -3,21 +3,21 @@
 // i/p = 578378923
 // o/p = 783
 //  Approach print the repeated elements from the input
-// #include<stdio.h>
-// #include<math.h>
+#include<stdio.h>
+#include<math.h>
 
-// void Securitykey(int data){
-//     int count=(data==0)?1:log10(data)+1;  
-//     for(int i = 1; i<= count; i++){
-//         int rem = data%10;
-//         for(int j = 0; j<i; j++){
-//             if(rem ==  j){
-//                 printf("%d", j);
-//             }
-//         }
-//         data /=10;
-//     }
-// }
+void Securitykey(int data){
+    int count=(data==0)?1:log10(data)+1;  
+    for(int i = 1; i<= count; i++){
+        int rem = data%10;
+        for(int j = 0; j<i; j++){
+            if(rem ==  j){
+                printf("%d", j);
+            }
+        }
+        data /=10;
+    }
+}
 
 // int main(){
 //     int data[20];
