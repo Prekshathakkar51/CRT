@@ -18,16 +18,16 @@ int fact(int n){
 int main(){
     int r , n;
     printf("Enter no of seats: ");
-    scanf("%d", &n);
+    scanf("%d", &r);
 
     printf("Enter no of people: ");
-    scanf("%d", &r);
+    scanf("%d", &n);
 
     int n_fact = fact(n);
 
     // int r_fact = fact(r);
 
-    int comb = fact(n) / fact(n-r)*fact(r);
+    int comb = fact(r) / (fact(r-n)*fact(n));
 
     printf("%d", comb*n_fact);
 
